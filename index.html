@@ -1,4 +1,6 @@
-<html><head>
+<html>
+
+<head>
 
     <meta charset="UTF-8">
 
@@ -10,6 +12,20 @@
 
     <title>TheUrk's final project(Pre-camp)</title>
 
+    <script>
+            function mouseOver() {
+                document.getElementById("name").style.color = "red";
+            }
+
+            function mouseOut() {
+                document.getElementById("name").style.color = "#202020";
+            }
+            function myFunction() {
+                alert("ทำไม่ได้ครับ ยอมม T_T");
+            }
+
+        </script>
+
 </head>
 
 <body>
@@ -20,11 +36,13 @@
 
 
 
+
+
     <div class="blueSpace">
 
         <div class="leftBlock">
 
-            <img src="/image/IMG_0957.JPG" style="max-width: 100%;height: auto; position: relative;" alt="รูปผมเองครับ" >
+            <img src="/image/IMG_0957.JPG" style="max-width: 100%;height: auto; position: relative;" alt="รูปผมเองครับ">
 
         </div>
 
@@ -33,9 +51,12 @@
         <div class="rightBlock">
 
             <h1>
-                <p><span style="color: rgb(32, 32, 32);; font-weight: 900; font-size: 35px;">Akarapone Ake-attapon</span></p>
+                <p style="color: #202020;; font-weight: 900; font-size: 35px;" id="name"
+                    onmouseover="mouseOver()" onmouseout="mouseOut()"> Akarapone Ake-attapon </p>
+
                 <p>Nickname : <span>Urk</span></p>
                 <p>Education : <span>B.A. Sociology and Anthropology Thammasat University</span></p>
+                <button onclick="this.innerHTML=Date()">The time is?</button>
             </h1>
 
         </div>
@@ -50,12 +71,17 @@
             <h1 style="font-size: 50px; font-weight: 900;">My Skills . .</h1>
 
             <h1>
-                <ul>
-                    <li>Learning</li>
-                    <li>Communication</li>
-                    <li>Gaming</li>
-                    <li>Matial Arts</li>
+                <ul id="menu">
+                    <li>Learning<i class="fas fa-eraser"></i></li>
+                    <li>Communication<i class="fas fa-eraser"></i></li>
+                    <li>Gaming<i class="fas fa-eraser"></i></li>
+                    <li>Matial Arts<i class="fas fa-eraser"></i></li>
+                    <button onclick="myFunction()">Add me!!</button>
+
+                
+
                 </ul>
+
             </h1>
 
 
@@ -65,7 +91,7 @@
 
         <div class="rightBlock">
 
-            <img src="/image/skill.jpg" style="max-width: 100%;height: auto; position: relative;"  alt="รูปสกิลแบบต่างๆ"  >
+            <img src="/image/skill.jpg" style="max-width: 100%;height: auto; position: relative;" alt="รูปสกิลแบบต่างๆ">
 
         </div>
 
@@ -76,7 +102,8 @@
 
         <div class="leftBlock">
 
-            <img src="/image/ThreeEver_Logo_Crop.jpg" style="max-width: 100%;height: auto; position: relative;" alt="logo บริษัท" >
+            <img src="/image/ThreeEver_Logo_Crop.jpg" style="max-width: 100%;height: auto; position: relative;"
+                alt="logo บริษัท">
 
         </div>
 
@@ -87,11 +114,11 @@
             <h1 style="font-size: 40px; font-weight: 900;">Work experience</h1>
 
             <h1>
-                    <ul>
-                        <li>Summer trainee at Nestle (Thai) co., ltd.</li>
-                        <li>My family business at ThreeEver Group.co.ltd.</li>
-                    </ul>
-                </h1>
+                <ul>
+                    <li>Summer trainee at Nestle (Thai) co., ltd.</li>
+                    <li>My family business at ThreeEver Group.co.ltd.</li>
+                </ul>
+            </h1>
 
 
 

@@ -6,12 +6,34 @@ body {
 }
 
 
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+@media only screen and (max-width:620px) {
+  
+         .lefttBlock {
+             width: 100%;
+             float: left;
+         }
+
+         .righttBlock {
+            width: 100%;
+            float: left;
+        }
+}
+
+
 .blueSpace {
     position: relative;
     background-color: lightblue;
     color: #616464;
     padding: 280px;
     margin: -10px;
+    width: 100%;
 }
 
 .redSpace {
@@ -20,14 +42,15 @@ body {
     color: azure;
     padding: 280px;
     margin: -10px;
+    width: 100%;
 }
 
 .leftBlock {
         position: absolute;
         left: 100px;
         top: 90px;
-        width: 460px;
-        height: 370px;
+        max-width: 100%;
+        height: auto;
 
 }
 
@@ -45,5 +68,5 @@ body {
     padding: 40px;
     margin: -10px;
     text-align: center;
-   
- }
+}
+ 
